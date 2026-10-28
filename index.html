@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mood Remote — Support</title>
+<meta name="description" content="Support for Mood Remote, an unofficial iPhone remote for Philips Hue lights.">
+<style>
+  :root {
+    --bg: #fbfaf7; --fg: #1d1c1a; --muted: #6b6760; --card: #ffffff;
+    --line: #e6e2da; --accent: #c2410c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141312; --fg: #ece9e3; --muted: #a29d94; --card: #1d1c1a;
+      --line: #2f2c28; --accent: #fb923c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Segoe UI", sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  header { margin-bottom: 8px; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.3rem; margin: 40px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.05rem; margin: 24px 0 4px; }
+  p, li { color: var(--fg); }
+  .lead { color: var(--muted); margin: 0; }
+  .lang { display: flex; gap: 12px; margin: 16px 0 0; font-size: .95rem; }
+  a { color: var(--accent); }
+  ol, ul { padding-left: 1.3em; }
+  li { margin: 4px 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 4px 16px 12px; margin: 16px 0; }
+  .divider { margin: 56px 0 0; border: 0; border-top: 3px double var(--line); }
+  footer { max-width: 720px; margin: 0 auto; padding: 24px 16px 40px; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); }
+  footer p { color: var(--muted); margin: 4px 0; }
+  code { font-size: .95em; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Mood Remote</h1>
+    <p class="lead">An unofficial iPhone remote for Philips Hue lights.</p>
+    <nav class="lang"><a href="#en">English</a><a href="#ja">日本語</a><a href="privacy.html">Privacy Policy / プライバシーポリシー</a></nav>
+  </header>
+
+  <!-- ===================== English ===================== -->
+  <section id="en" lang="en">
+    <h2>What is Mood Remote?</h2>
+    <p>Mood Remote puts your Philips Hue lighting on Home Screen widgets so you can change it with one tap, without opening the app. It also works from the Lock Screen, Control Center (iOS 18), the Action Button, Siri and Shortcuts.</p>
+    <ul>
+      <li>Remember current lighting: save each light's on/off, brightness and color into a button and bring it back with one tap. You can leave some lights out so they stay untouched.</li>
+      <li>Assign Hue scenes, turn rooms or zones on or off, and use the always-available All Off button.</li>
+      <li>Brightness slider for the room, and random colors.</li>
+      <li>8 ready-made moods, applied to the room with the most lights. Colorful moods slowly shift colors using Hue's dynamic scenes, which keep running on the Bridge even when the app is closed.</li>
+      <li>Demo mode: try the whole app without a Hue Bridge (a simulated living room with 7 lights).</li>
+    </ul>
+    <p>Free to download. A one-time Pro purchase unlocks all 8 moods and up to 6 buttons (the free version has 2 buttons and the Relax mood). No subscription.</p>
+
+    <h2>Requirements</h2>
+    <ul>
+      <li>iPhone with iOS 17 or later (the Control Center control needs iOS 18).</li>
+      <li>A Philips Hue Bridge with Hue lights.</li>
+      <li>Your iPhone and the Bridge on the same Wi-Fi network.</li>
+    </ul>
+
+    <h2>Setup</h2>
+    <ol>
+      <li>Connect your iPhone to the same Wi-Fi as your Hue Bridge.</li>
+      <li>Open Mood Remote. It searches for your Bridge automatically. If iOS asks for Local Network access, tap Allow.</li>
+      <li>When asked, press the round link button on top of your Hue Bridge.</li>
+      <li>Set up your buttons, then add a Mood Remote widget to your Home Screen (touch and hold the Home Screen, tap Edit, then Add Widget).</li>
+    </ol>
+    <p>Just curious? Tap <strong>Try Demo (no Bridge)</strong> on the setup screen to explore the app with simulated lights.</p>
+
+    <h2>FAQ</h2>
+    <div class="card">
+      <h3>The app can't find my Bridge.</h3>
+      <p>Enter the Bridge's IP address manually on the setup screen. You can find it in the Hue app under Settings, Hue Bridges, then the (i) button. Giving the Bridge a fixed IP address in your router's settings prevents it from changing later.</p>
+
+      <h3>The widget says it can't connect.</h3>
+      <p>Make sure your iPhone is on the same Wi-Fi as the Bridge (widgets can't reach the Bridge over mobile data or another network). Also check that Local Network access is on: iPhone Settings, Privacy &amp; Security, Local Network, Mood Remote.</p>
+
+      <h3>I see scenes named "Mood Remote …" in the Hue app.</h3>
+      <p>Moods are created as scenes on your Bridge so their colors can keep shifting even when the app is closed. To remove them, open Mood Remote, go to Settings and use the option to delete the Mood scenes created in the Hue app. You can also delete them one by one in the Hue app. They will be created again the next time you use a mood.</p>
+
+      <h3>How do I restore my Pro purchase?</h3>
+      <p>Open Mood Remote and tap Restore Purchases. Use the same Apple Account you bought Pro with. Pro is a one-time purchase, not a subscription.</p>
+    </div>
+
+    <h2>Contact</h2>
+    <p>Questions or problems? Email <a href="mailto:takuya.ito@gmail.com">takuya.ito@gmail.com</a>. Please include your iPhone model, iOS version and a short description of what happened.</p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ===================== 日本語 ===================== -->
+  <section id="ja" lang="ja">
+    <h2>Mood Remote とは</h2>
+    <p>Mood Remote は、Philips Hue の照明をホーム画面のウィジェットからワンタップで操作できる、非公式の iPhone 用リモコンアプリです。アプリを開かなくても明かりを切り替えられます。ロック画面、コントロールセンター（iOS 18）、アクションボタン、Siri、ショートカットからも使えます。</p>
+    <ul>
+      <li>「今の明かりを覚える」：ライトごとのオン／オフ、明るさ、色をボタンに保存して、ワンタップで呼び出せます。触りたくないライトは外しておけば、そのままです。</li>
+      <li>Hue のシーンの割り当て、ルーム／ゾーンのオン・オフ、いつでも使える「全部消す」ボタン。</li>
+      <li>ルームの明るさスライダーと、ランダムな色。</li>
+      <li>すぐ使えるムード8種。ライトがいちばん多いルームに反映されます。カラフルなムードは Hue のダイナミックシーンで色がゆっくり移り変わり、Bridge 側で動くのでアプリを閉じても続きます。</li>
+      <li>デモモード：Hue Bridge がなくても、ライト7個のリビングを再現した画面ですべての機能を試せます。</li>
+    </ul>
+    <p>ダウンロードは無料です。Pro（買い切り）を購入すると、ムード8種すべてとボタン最大6個が使えます（無料版はボタン2個と「リラックス」）。サブスクリプションではありません。</p>
+
+    <h2>動作環境</h2>
+    <ul>
+      <li>iOS 17 以降の iPhone（コントロールセンターは iOS 18 以降）</li>
+      <li>Philips Hue Bridge と Hue のライト</li>
+      <li>iPhone と Bridge が同じ Wi-Fi につながっていること</li>
+    </ul>
+
+    <h2>はじめかた</h2>
+    <ol>
+      <li>iPhone を Hue Bridge と同じ Wi-Fi につなぎます。</li>
+      <li>Mood Remote を開くと、自動で Bridge を探します。「ローカルネットワーク」へのアクセスを求められたら「許可」をタップしてください。</li>
+      <li>案内が出たら、Hue Bridge の上にある丸いリンクボタンを押します。</li>
+      <li>ボタンを設定したら、ホーム画面に Mood Remote のウィジェットを追加します（ホーム画面を長押し →「編集」→「ウィジェットを追加」）。</li>
+    </ol>
+    <p>まずは試してみたい方は、最初の画面の「デモを試す（Bridge なし）」から、仮想のライトで全部の機能を触れます。</p>
+
+    <h2>よくある質問</h2>
+    <div class="card">
+      <h3>Bridge が見つかりません</h3>
+      <p>最初の画面で Bridge の IP アドレスを直接入力してください。IP アドレスは Hue アプリの「設定」→「Hue Bridge」→ ⓘ で確認できます。ルーターの設定で Bridge の IP を固定しておくと、あとで変わってつながらなくなることがありません。</p>
+
+      <h3>ウィジェットに「接続できません」と出ます</h3>
+      <p>iPhone が Bridge と同じ Wi-Fi につながっているか確認してください（モバイル通信や別のネットワークからは Bridge に届きません）。あわせて、iPhone の「設定」→「プライバシーとセキュリティ」→「ローカルネットワーク」で Mood Remote がオンになっているかもご確認ください。</p>
+
+      <h3>Hue アプリに「Mood Remote …」という名前のシーンができています</h3>
+      <p>ムードは、アプリを閉じても色が移り変わり続けるように、Bridge にシーンとして作られます。消したいときは、Mood Remote の「設定」→「Hue アプリに作ったムードのシーンを削除」をタップしてください。Hue アプリから個別に削除しても大丈夫です。次にムードを使うと、また作られます。</p>
+
+      <h3>Pro の購入を復元したい</h3>
+      <p>Mood Remote で「購入を復元」をタップしてください。Pro を購入したときと同じ Apple アカウントでサインインしている必要があります。Pro は買い切りで、サブスクリプションではありません。</p>
+    </div>
+
+    <h2>お問い合わせ</h2>
+    <p>ご質問・不具合のご連絡は <a href="mailto:takuya.ito@gmail.com">takuya.ito@gmail.com</a> までお送りください。iPhone の機種、iOS のバージョン、起きたことをひとこと添えていただけると助かります。</p>
+    <p><a href="privacy.html">プライバシーポリシー</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>Mood Remote is an independent app and is not affiliated with, endorsed by or sponsored by Signify or Philips. Philips Hue and Hue are trademarks of Signify Holding, used here only to describe compatibility.</p>
+  <p lang="ja">Mood Remote は個人開発の非公式アプリで、Signify および Philips とは関係ありません。Philips Hue および Hue は Signify Holding の商標で、対応製品を示すためにのみ使用しています。</p>
+</footer>
+</body>
+</html>
